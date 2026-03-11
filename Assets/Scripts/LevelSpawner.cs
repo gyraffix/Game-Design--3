@@ -27,8 +27,7 @@ public class LevelSpawner : MonoBehaviour
         }
 
         Debug.Log("Spawn");
-        Vector3 spawnPos = spawnPoint.position + (spawnPoint.right //* -50
-                                                                 );
+        Vector3 spawnPos = spawnPoint.position + (spawnPoint.right * -50);
 
         GameObject levelToSpawn = null;
 
