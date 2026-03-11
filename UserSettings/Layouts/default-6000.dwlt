@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 7a5a0000
     m_LastClickedID: 23162
-    m_ExpandedIDs: 000000006ae20000
+    m_ExpandedIDs: 000000001ab00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -398,7 +398,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006ae20000
+    m_ExpandedIDs: 000000001ab00000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1094,9 +1094,13 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 0, y: 1, z: 3}
+=======
+    m_Target: {x: -5.667238, y: -0.36544293, z: 18.53408}
+>>>>>>> Stashed changes
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -5.667238, y: -0.36544293, z: 18.53408}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1142,13 +1146,21 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
     m_Target: {x: -0.25919858, y: 0.011297011, z: -0.0030318266, w: -0.9657568}
+=======
+    m_Target: {x: -0.06349083, y: 0.41324323, z: -0.028893847, w: -0.9079907}
+>>>>>>> Stashed changes
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.06349083, y: 0.4132432, z: -0.028893847, w: -0.9079907}
   m_Size:
+<<<<<<< Updated upstream
     m_Target: 16.53187
+=======
+    m_Target: 7.930515
+>>>>>>> Stashed changes
     speed: 2
-    m_Value: 10
+    m_Value: 7.930515
   m_Ortho:
     m_Target: 0
     speed: 2

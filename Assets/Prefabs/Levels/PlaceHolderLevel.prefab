@@ -118,6 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5259453289801073774}
   - component: {fileID: 1527585485283641152}
+  - component: {fileID: -2404441971097358160}
   m_Layer: 0
   m_Name: PlaceHolderLevel
   m_TagString: Untagged
@@ -165,6 +166,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11.111614, y: 5.25939, z: 14.531057}
   m_Center: {x: 1.6666822, y: 2.129695, z: 12.383647}
+--- !u!114 &-2404441971097358160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4023508524751334707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ed2d9f1301c2547a2b1727b8b900b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentPlatform: {fileID: 0}
+  speed: 5
+  risingSpeed: 5
+  platformDistance: 10
+  timeBetween: 1
 --- !u!1 &4354475846781748159
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183496095820316156, guid: f203f037d76d89044a30d0091f5741a7, type: 3}
       propertyPath: m_Name
-      value: NewLevelPlatform (1)
+      value: NewLevelPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 8478609571201826708, guid: f203f037d76d89044a30d0091f5741a7, type: 3}
       propertyPath: levels.Array.size
