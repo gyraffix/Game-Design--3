@@ -7,7 +7,7 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private GameObject[] easyLevels;
     [SerializeField] private GameObject[] mediumLevels;
     [SerializeField] private GameObject[] hardLevels;
-    [SerializeField] private List<GameObject> playedLevels;
+    private List<GameObject> playedLevels;
 
     public static LevelSpawner instance;
 
@@ -27,7 +27,7 @@ public class LevelSpawner : MonoBehaviour
         }
 
         Debug.Log("Spawn");
-        Vector3 spawnPos = spawnPoint.position + (spawnPoint.right * -50);
+        Vector3 spawnPos = spawnPoint.position + (spawnPoint.right * -30);
 
         GameObject levelToSpawn = null;
 
