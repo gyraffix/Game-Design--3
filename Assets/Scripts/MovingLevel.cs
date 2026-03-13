@@ -31,8 +31,7 @@ public class MovingLevel : MonoBehaviour
     void Start()
     {
         goalPlatform = transform.Find("NewLevelPlatform").gameObject;
-        goalHeight = goalPlatform.transform.position.y;
-        Debug.Log("Find");
+        goalHeight = goalPlatform.transform.position.y;        
         currentPlatform = GameObject.Find("CurrentPlatform").gameObject;
         player = GameObject.Find("Player");
         

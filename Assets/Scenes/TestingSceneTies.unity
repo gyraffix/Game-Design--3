@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &280809896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 280809897}
-  m_Layer: 0
-  m_Name: MediumLevel1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &280809897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280809896}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963425516
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,63 +302,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41352bc3e4707bd4a81d3eb1c151861c, type: 3}
---- !u!1001 &4522401613767427529
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3647852131615318588, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_Name
-      value: EasyLevel3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339810981164681118, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
 --- !u!1001 &7322829134956444737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -526,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
       propertyPath: 'easyLevels.Array.data[0]'
       value: 
-      objectReference: {fileID: 5265793197410810533, guid: e83ed22f15c848e4d960f6a5d3f61731, type: 3}
+      objectReference: {fileID: 991807198926727651, guid: ff74112293329b04eb75f7d15dd1c28e, type: 3}
     - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
       propertyPath: 'hardLevels.Array.data[0]'
       value: 
@@ -622,5 +534,3 @@ SceneRoots:
   - {fileID: 7738989031911755082}
   - {fileID: 2061354436}
   - {fileID: 7421010552872127688}
-  - {fileID: 280809897}
-  - {fileID: 4522401613767427529}
