@@ -16,6 +16,7 @@ public class MovingLevel : MonoBehaviour
     private GameObject goalPlatform;
     private GameObject player;
     private float goalHeight;
+    private AudioSource whirr;
 
     public float speed;
     public float risingSpeed;
@@ -34,6 +35,7 @@ public class MovingLevel : MonoBehaviour
         goalHeight = goalPlatform.transform.position.y;        
         currentPlatform = GameObject.Find("CurrentPlatform").gameObject;
         player = GameObject.Find("Player");
+        whirr = GameObject.Find("Whirr").GetComponent<AudioSource>();
         
     }
 
@@ -71,6 +73,9 @@ public class MovingLevel : MonoBehaviour
 
         if (started && !goalMoved)
         {
+            if (!whirr.isPlaying)
+                whirr.Play();
+
             //Move Up
             Vector3 moveDirection = (Vector3.up * (goalHeight - goal.transform.position.y)).normalized;
 
@@ -86,6 +91,7 @@ public class MovingLevel : MonoBehaviour
             }
             else
             {
+                whirr.Stop();
                 goalMoved = true;
                 StartCoroutine(TimeBetween());
             }
@@ -98,6 +104,12 @@ public class MovingLevel : MonoBehaviour
             else
             {
                 goal.transform.Translate(Vector3.left * Time.deltaTime * speed * LevelSpawner.instance.gameSpeed);
+            }
+
+
+            if ((transform.position - goal.transform.position).magnitude > 40 + platformDistance)
+            {
+                Destroy(gameObject);
             }
         }
     }

@@ -21,6 +21,7 @@ public class NewLevelTrigger : MonoBehaviour
             StartCoroutine(LevelSpawner.instance.SpawnNewLevel(transform));
             Debug.Log("NoCollider");
             ding.Play();
+            GameLoop.instance.AddScore();
         }
     }    
 }
