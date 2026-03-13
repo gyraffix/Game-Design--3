@@ -5,19 +5,26 @@ using UnityEngine;
 public class LevelSpawner : MonoBehaviour
 {
     [SerializeField] private float spawnDistance;
-
-    [SerializeField] private GameObject[] easyLevels;
-    [SerializeField] private GameObject[] mediumLevels;
-    [SerializeField] private GameObject[] hardLevels;
-    [SerializeField] private List<GameObject> playedLevels;
+    
+    [SerializeField] private GameObject[] levelList;
+    [SerializeField] private List<GameObject> currentActiveLevels;
+    private int playedLevels;
 
     [HideInInspector] public float gameSpeed = 1;
     public static LevelSpawner instance;
 
+    private bool allLevelsPlayed;
+
+    private void Start()
+    {
+        foreach (var level in levelList)
+            currentActiveLevels.Add(level);                        
+    }
+
     private void Awake()
     {
         instance = this;
-        gameSpeed = 1;
+        gameSpeed = 1;        
     }
 
 
@@ -25,35 +32,38 @@ public class LevelSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        if (playedLevels.Count == easyLevels.Length + mediumLevels.Length + hardLevels.Length)
+        if (currentActiveLevels.Count == 0)
         {
-            playedLevels.Clear();
+            foreach (var level in levelList)
+                currentActiveLevels.Add(level);  
+            allLevelsPlayed = true;
+            playedLevels = 0;
             gameSpeed += 0.1f;
         }
 
         //Debug.Log("Spawn");
         Vector3 spawnPos = spawnPoint.position + (spawnPoint.right * -spawnDistance);
 
-        GameObject levelToSpawn = null;
+        int levelToSpawn = 0;
+        GameObject spawnedLevel = null;
 
-        if (playedLevels.Count >= 0 && playedLevels.Count < easyLevels.Length)
+        if (!allLevelsPlayed)
         {
-            levelToSpawn = Instantiate(easyLevels[playedLevels.Count], spawnPos, spawnPoint.rotation);
-        }
-        else if (playedLevels.Count >= easyLevels.Length && playedLevels.Count < easyLevels.Length + mediumLevels.Length)
-        {
-            levelToSpawn = Instantiate(mediumLevels[playedLevels.Count - easyLevels.Length], spawnPos, spawnPoint.rotation);
+            levelToSpawn = 0;
+            spawnedLevel = Instantiate(currentActiveLevels[0], spawnPos, spawnPoint.rotation);
         }
         else
         {
-            levelToSpawn = Instantiate(hardLevels[playedLevels.Count - (easyLevels.Length + mediumLevels.Length)], spawnPos, spawnPoint.rotation);
+            levelToSpawn = Random.Range(0, currentActiveLevels.Count);
+            spawnedLevel = Instantiate(currentActiveLevels[levelToSpawn], spawnPos, spawnPoint.rotation);
         }
-        
-        playedLevels.Add(levelToSpawn);
+        currentActiveLevels.Remove(currentActiveLevels[levelToSpawn]);
 
-        if (levelToSpawn.transform.Find("StaticObjects") != null)
+        playedLevels++;
+
+        if (spawnedLevel.transform.Find("StaticObjects") != null)
         {
-            Transform staticObjectsTransform = levelToSpawn.transform.Find("StaticObjects").transform;
+            Transform staticObjectsTransform = spawnedLevel.transform.Find("StaticObjects").transform;
             staticObjectsTransform.parent = GameObject.Find("NewLevelPlatform").transform;
             //staticObjectsTransform.position = staticObjectsTransform.position + staticObjectsTransform.right * spawnDistance;
         }
