@@ -1,0 +1,53 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameLoop : MonoBehaviour
+{
+    public static GameLoop instance;
+    public GameObject gameOverUI;
+    private TMP_Text scoreText;
+    private TMP_Text highScoreText;
+    public int score = 0;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        instance = this;
+        gameOverUI = GameObject.Find("UI");
+        scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+        highScoreText = GameObject.Find("HighScore").GetComponent<TMP_Text>();
+        gameOverUI.SetActive(false);
+    }
+
+    public void AddScore()
+    {
+        score++;
+        
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GameOver()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        if (!PlayerPrefs.HasKey("HighScore"))
+        {
+            if (PlayerPrefs.GetInt("HighScore") < score)
+                PlayerPrefs.SetInt("HighScore", score);
+        }
+        gameOverUI.SetActive(true);
+        scoreText.text = "Your Score: " + score;
+        highScoreText.text = "HighScore: " + PlayerPrefs.GetInt("HighScore");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

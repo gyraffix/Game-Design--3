@@ -8,7 +8,7 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private GameObject[] mediumLevels;
     [SerializeField] private GameObject[] hardLevels;
     [SerializeField] private List<GameObject> playedLevels;
-
+    [HideInInspector] public float gameSpeed = 0;
     public static LevelSpawner instance;
 
     private void Awake()
@@ -24,6 +24,7 @@ public class LevelSpawner : MonoBehaviour
         if (playedLevels.Count == 8)
         {
             playedLevels.Clear();
+            gameSpeed += 0.1f;
         }
 
         //Debug.Log("Spawn");
