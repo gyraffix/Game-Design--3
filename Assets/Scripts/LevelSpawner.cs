@@ -49,7 +49,8 @@ public class LevelSpawner : MonoBehaviour
         if (levelToSpawn.transform.Find("StaticObjects") != null)
         {
             Transform staticObjectsTransform = levelToSpawn.transform.Find("StaticObjects").transform;
-            staticObjectsTransform.position = staticObjectsTransform.position + staticObjectsTransform.right * 30;
+            staticObjectsTransform.parent = GameObject.Find("NewLevelPlatform").transform;
+            //staticObjectsTransform.position = staticObjectsTransform.position + staticObjectsTransform.right * 30;
         }
     }
 }
