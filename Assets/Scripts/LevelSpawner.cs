@@ -8,12 +8,13 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private GameObject[] mediumLevels;
     [SerializeField] private GameObject[] hardLevels;
     [SerializeField] private List<GameObject> playedLevels;
-    [HideInInspector] public float gameSpeed = 0;
+    [HideInInspector] public float gameSpeed = 1;
     public static LevelSpawner instance;
 
     private void Awake()
     {
         instance = this;
+        gameSpeed = 1;
     }
 
 

@@ -6,6 +6,13 @@ using UnityEngine;
 
 public class NewLevelTrigger : MonoBehaviour
 {
+    private AudioSource ding;
+
+    private void Start()
+    {
+        ding = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<ThirdPersonController>())
@@ -13,6 +20,7 @@ public class NewLevelTrigger : MonoBehaviour
             gameObject.GetComponent<Collider>().enabled = false;
             StartCoroutine(LevelSpawner.instance.SpawnNewLevel(transform));
             Debug.Log("NoCollider");
+            ding.Play();
         }
     }    
 }
