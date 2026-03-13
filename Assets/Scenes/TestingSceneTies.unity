@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1021707425792143609, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1263701600196998941, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.222568
@@ -422,30 +426,6 @@ PrefabInstance:
     - target: {fileID: 1263701600196998941, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: easyLevels.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: hardLevels.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: mediumLevels.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: 'easyLevels.Array.data[0]'
-      value: 
-      objectReference: {fileID: 991807198926727651, guid: ff74112293329b04eb75f7d15dd1c28e, type: 3}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: 'hardLevels.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2703746776231456471, guid: 3492d9c56f3b25344ab902454c0089be, type: 3}
-      propertyPath: 'mediumLevels.Array.data[0]'
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -44,7 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728fb10b3fc6a5e49ab60faff835b280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easyLevels: []
-  mediumLevels: []
-  hardLevels: []
+  spawnDistance: 30
+  easyLevels:
+  - {fileID: 5265793197410810533, guid: e83ed22f15c848e4d960f6a5d3f61731, type: 3}
+  - {fileID: 5679432396236155137, guid: 5ded48ef82d0d6a449f1dafef7303c6b, type: 3}
+  - {fileID: 3647852131615318588, guid: 7102e04728ae7f1439b87910a91bbc87, type: 3}
+  mediumLevels:
+  - {fileID: 6203679775035681187, guid: ddf2eac5538f8ae41926dbba9afd3c9b, type: 3}
+  - {fileID: 991807198926727651, guid: ff74112293329b04eb75f7d15dd1c28e, type: 3}
+  hardLevels:
+  - {fileID: 9059696142009840266, guid: 741eac8dffbd60f46b306a1cec40a2b9, type: 3}
+  - {fileID: 7508783809478406198, guid: 6c1ab176a7e7e1c4eb2cda8022c3fc59, type: 3}
+  - {fileID: 6893767434138965584, guid: 0a5703d5a1ca039499de4fb7e3578b62, type: 3}
   playedLevels: []
+  gameSpeed: 1
