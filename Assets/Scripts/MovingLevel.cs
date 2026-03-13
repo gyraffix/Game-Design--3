@@ -107,7 +107,7 @@ public class MovingLevel : MonoBehaviour
             }
 
 
-            if ((transform.position - goal.transform.position).magnitude > 40 + platformDistance)
+            if ((transform.position - goal.transform.position).magnitude > 100 + platformDistance)
             {
                 Destroy(gameObject);
             }
