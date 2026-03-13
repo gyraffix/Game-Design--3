@@ -14,7 +14,7 @@ public class MovingLevel : MonoBehaviour
     public GameObject currentPlatform;
     private GameObject goal;
     private GameObject goalPlatform;
-    private GameObject player;
+    
     private float goalHeight;
     private AudioSource whirr;
 
@@ -34,9 +34,13 @@ public class MovingLevel : MonoBehaviour
         goalPlatform = transform.Find("NewLevelPlatform").gameObject;
         goalHeight = goalPlatform.transform.position.y;        
         currentPlatform = GameObject.Find("CurrentPlatform").gameObject;
-        player = GameObject.Find("Player");
+        goalPlatform.GetComponentInChildren<NewLevelTrigger>().previousLevel = this;
         whirr = GameObject.Find("Whirr").GetComponent<AudioSource>();
         
+    }
+    public void DestroyLevel()
+    {
+        Destroy(gameObject);
     }
 
     private void GoalSequence()

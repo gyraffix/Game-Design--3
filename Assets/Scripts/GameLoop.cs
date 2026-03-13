@@ -9,6 +9,7 @@ public class GameLoop : MonoBehaviour
     private TMP_Text scoreText;
     private TMP_Text highScoreText;
     private TMP_Text currentScore;
+    private GameObject player;
     public int score = -1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,6 +21,7 @@ public class GameLoop : MonoBehaviour
         scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
         highScoreText = GameObject.Find("HighScore").GetComponent<TMP_Text>();
         currentScore = GameObject.Find("ScoreText").GetComponent <TMP_Text>();
+        player = GameObject.Find("PlayerArmature");
         gameOverUI.SetActive(false);
     }
 
@@ -36,6 +38,7 @@ public class GameLoop : MonoBehaviour
 
     public void GameOver()
     {
+        player.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         if (PlayerPrefs.HasKey("HighScore"))
         {

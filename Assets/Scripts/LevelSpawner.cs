@@ -25,7 +25,7 @@ public class LevelSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        if (playedLevels.Count == 9)
+        if (playedLevels.Count == easyLevels.Length + mediumLevels.Length + hardLevels.Length)
         {
             playedLevels.Clear();
             gameSpeed += 0.1f;
