@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5151798962791215113}
   m_Layer: 0
   m_Name: Bar (5)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 278926573068651289}
   m_Layer: 0
   m_Name: Bar (7)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 658912958606628411}
   m_Layer: 0
   m_Name: Bar (9)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 4459127490943530213}
   m_Layer: 0
   m_Name: Bar
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -567,7 +567,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 20478332531878283}
   m_Layer: 0
   m_Name: Bar (2)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -675,7 +675,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 3619435395261138782}
   m_Layer: 0
   m_Name: Bar (6)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -824,7 +824,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 7448727078871209006}
   m_Layer: 0
   m_Name: Bar (1)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -932,7 +932,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 1231707137675261950}
   m_Layer: 0
   m_Name: Bar (4)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1040,7 +1040,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1060,7 +1060,7 @@ GameObject:
   - component: {fileID: 7389116508809380455}
   m_Layer: 0
   m_Name: Bar (8)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1148,7 +1148,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 2463497930211394009}
   m_Layer: 0
   m_Name: Bar (3)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1256,7 +1256,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

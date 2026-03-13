@@ -166,6 +166,14 @@ namespace StarterAssets
             CameraRotation();
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "DamagingObject")
+            {
+                GameLoop.instance.GameOver();
+            }
+        }
+
         private void AssignAnimationIDs()
         {
             _animIDSpeed = Animator.StringToHash("Speed");

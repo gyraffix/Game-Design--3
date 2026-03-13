@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 3758251815744679929}
   m_Layer: 0
   m_Name: Bar (2)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,7 +213,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 3825498512254610258}
   m_Layer: 0
   m_Name: Bar
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,7 +321,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 961495418869179896}
   m_Layer: 0
   m_Name: Bar (1)
-  m_TagString: Untagged
+  m_TagString: DamagingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,7 +429,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -453,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5889133715265965083, guid: efdaa8d7382780f41a8fb85ab0befaf9, type: 3}
       propertyPath: m_Name
-      value: EasyLevel3
+      value: DamageObjectIntro
       objectReference: {fileID: 0}
     - target: {fileID: 6120267529542889569, guid: efdaa8d7382780f41a8fb85ab0befaf9, type: 3}
       propertyPath: m_Size.x
